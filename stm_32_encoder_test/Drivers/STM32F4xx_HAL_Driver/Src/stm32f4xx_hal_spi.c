@@ -1259,7 +1259,11 @@ HAL_StatusTypeDef HAL_SPI_TransmitReceive(SPI_HandleTypeDef *hspi, const uint8_t
         txallowed = 1U;
       }
       if (((HAL_GetTick() - tickstart) >=  Timeout) && (Timeout != HAL_MAX_DELAY))
-      {
+      {MISO -> 3.3V = 262.143 (Max Değer) görmelisin.
+
+    	  MISO -> GND = 0 (Min Değer) görmelisin.
+
+
         hspi->State = HAL_SPI_STATE_READY;
         __HAL_UNLOCK(hspi);
         return HAL_TIMEOUT;

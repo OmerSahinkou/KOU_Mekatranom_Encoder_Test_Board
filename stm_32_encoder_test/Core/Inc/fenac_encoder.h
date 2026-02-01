@@ -12,7 +12,7 @@
 
 // --- KULLANICI AYARLARI ---
 // Eğer donanım yoksa ve test yapılacaksa bu satırı yorumdan çıkarın:
-#define SPI_LOOPBACK_TEST_MODE
+//#define SPI_LOOPBACK_TEST_MODE
 
 // Enkoder Çözünürlüğü (Datasheet'e göre 21 bit'e kadar çıkabilir )
 #define ENCODER_RESOLUTION_BITS  18
